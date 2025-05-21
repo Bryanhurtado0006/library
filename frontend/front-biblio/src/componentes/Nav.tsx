@@ -17,6 +17,9 @@ const Nav: React.FC = () => {
          <li className="nav-item">
           <Link to="/Inicio" className="nav-link" >Inicio</Link>
          </li>
+         <li className="nav-item">
+          <Link to="/ListarEditorial" className="nav-link" >Listar Editorial</Link>
+         </li>
 
 
       </ul>

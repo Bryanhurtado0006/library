@@ -5,7 +5,7 @@ const pgDatabase=new Client({
     port:5433,
     user:'postgres',
     password:'root',
-    database:'Biblioteca'
+    database:'libraryy'
 })
 
 pgDatabase.connect()

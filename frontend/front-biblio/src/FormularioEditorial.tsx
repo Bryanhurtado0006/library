@@ -7,8 +7,8 @@ const FormularioEditorial:React.FC=()=>{
     const [pais,setPais]=useState <string>('')
     const cambiarNombre=(valor:string)=>{setNombre(valor)}
     const cambiarPais=(pais:string)=>{setPais(pais)}
-    const guardar=()=>{
-        fetch ('http://localhost:5800/crearEdito', {
+    const guardar=async()=>{
+        await fetch ('http://localhost:3333/crearEdito', {
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify({nombre:nombre,pais:pais}),

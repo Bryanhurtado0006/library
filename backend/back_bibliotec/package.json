@@ -57,6 +57,7 @@
     "@adonisjs/lucid": "^21.6.1",
     "@vinejs/vine": "^3.0.1",
     "pg": "^8.16.0",
+    "react-bootstrap": "^2.10.10",
     "reflect-metadata": "^0.2.2"
   },
   "hotHook": {
