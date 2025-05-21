@@ -5,12 +5,20 @@ const Nav: React.FC = () => {
   return (
     <Container className="my-3">
       <ul className="nav nav-pills">
+
         <li className="nav-item">
           <Link to="/FormularioEditorial" className="nav-link">Crear Editorial</Link>
         </li>
+
         <li className="nav-item">
           <Link to="/FormularioLibros" className="nav-link">Crear Libros</Link>
         </li>
+
+         <li className="nav-item">
+          <Link to="/Inicio" className="nav-link" >Inicio</Link>
+         </li>
+
+
       </ul>
     </Container>
   );
