@@ -8,6 +8,7 @@ const EditarEditoriales=()=>{
     const [id,setId]=useState<number>(0)
     const [nombre,setNombre]=useState<string>('')
     const [pais,setPais]=useState<string>('')
+
     const {ids}=location.state as {ids:string}
     useEffect(()=>{
         traereditorial()
@@ -19,13 +20,11 @@ const EditarEditoriales=()=>{
         console.log(obj.id)
         setId(obj.mensaje[0].id)
         setNombre(obj.mensaje[0].nombre)
-        setPais(obj.mensaje[0
-
-        ].pais)
+        setPais(obj.mensaje[0].pais)
         
     }
     const actualizar=async()=>{
-       await fetch(`http://localhost:3333/actEdito/$ids`,{
+       await fetch(`http://localhost:3333/actEdito/${ids}`,{
             method:'PUT',
             headers:{
                 'Content-Type':'application/json',
@@ -43,6 +42,7 @@ const EditarEditoriales=()=>{
                 <input type="text" value={nombre} onChange={(e)=>setNombre(e.target.value)}/>
                 <input type="text" value={pais} onChange={(e)=>setPais(e.target.value)}/>
                 <button onClick={actualizar}>Actualizar</button>
+                <button onClick={()=>navigate('/ListarEditorial')}>Cancelar</button>
 
 
 

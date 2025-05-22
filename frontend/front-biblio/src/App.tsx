@@ -4,7 +4,7 @@ import FormularioEditorial from './FormularioEditorial';
 import FormularioLibros from "./FormularioLibros";
 import Inicio from "./Inicio";
 import ListarEditorial from "./ListarEditorial";
-import EditarEditoriales from "./componentes/EditarEditoriales";
+import EditarEditoriales from "./EditarEditoriales";
 
 
 import './App.css'
